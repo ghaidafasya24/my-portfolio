@@ -40,17 +40,16 @@
             >Home</a
           >
           <a
-            href="#"
+            href="#about"
             class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
             >About</a
           >
           <a
-            href="#"
+            href="#projects"
             class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
             >Projects</a
           >
           <a
-            <a
             href="#"
             class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
             >Sertificate</a
@@ -94,14 +93,19 @@
           >Home</a
         >
         <a
-          href="#"
+          href="#about"
           class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
           >About</a
         >
         <a
+          href="#projects"
+          class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
+          >Projects</a
+        >
+        <a
           href="#"
           class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
-          >Services</a
+          >Sertificate</a
         >
         <a
           href="#"
@@ -171,84 +175,231 @@
     </section>
     <!-- Home end  -->
 
-    <!-- About  -->
+    <!-- About -->
+    <section class="dark:bg-gray-900 dark:text-white py-12" id="about">
+      <div class="container mx-auto px-4">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-cyan-400">About Me</h1>
+          <p class="text-lg text-gray-400">
+            Learn more about me, my background, and my hobbies.
+          </p>
+        </div>
 
-    <!-- About End  -->
+        <!-- Personal Information Card -->
+        <div
+          class="max-w-4xl mx-auto mb-12 bg-gray-800 rounded-lg shadow-lg p-6"
+        >
+          <h2 class="text-2xl font-semibold text-cyan-400 mb-4">
+            Personal Information
+          </h2>
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <img
+              src="assets/img/profile2.jpg"
+              alt="Profile Image"
+              class="rounded-full shadow-lg w-48 h-48"
+            />
+            <div class="text-gray-300 mt-4 md:mt-0">
+              <p>
+                Hello! I am Ghaida Fasya Yuthika Afifah, but you can call me
+                Ghaida. I am 20 years old. I was born in Bandung and grew up in
+                the city of Bekasi.
+              </p>
+              <p class="mt-4">
+                I'm passionate web developer with a keen interest in web
+                technologies. I enjoy solving complex problems and continuously
+                learning new things.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div
+          class="max-w-4xl mx-auto mb-12 bg-gray-800 rounded-lg shadow-lg p-6"
+        >
+          <h2 class="text-2xl font-semibold text-cyan-400 mb-4">Education</h2>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-graduation-cap"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">
+                  MTS NEGERI 21 JAKARTA 
+                </h3>
+                <p class="text-gray-400">Junior High School, 2017 - 2019</p>
+                <p class="text-gray-300 mt-2">
+                  Islamic school
+                </p>
+              </div>
+            </li>
+
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-graduation-cap"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">SMK NEGERI 1 BEKASI</h3>
+                <p class="text-gray-400">High School, 2019 - 2022</p>
+                <p class="text-gray-300 mt-2">
+                  Software Engineering
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-graduation-cap"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">UNIVERSITY OF LOGISTICS AND INTERNATIONAL BUSINESS</h3>
+                <p class="text-gray-400">College, 2022 - On Going</p>
+                <p class="text-gray-300 mt-2">
+                  Informatics Engineering
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hobbies Card -->
+        <!-- <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-semibold text-cyan-400 mb-4">My Hobbies</h2>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-gamepad"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">Gaming</h3>
+                <p class="text-gray-300 mt-2">
+                  I enjoy playing video games, especially strategy and RPG
+                  games. It helps me to relax and challenge my mind.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-camera"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">Photography</h3>
+                <p class="text-gray-300 mt-2">
+                  Capturing beautiful moments through my camera is something I
+                  am passionate about. It allows me to express creativity.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <span
+                class="w-12 h-12 bg-cyan-400 text-white rounded-full flex justify-center items-center mr-4"
+              >
+                <i class="fas fa-book"></i>
+              </span>
+              <div>
+                <h3 class="text-xl font-semibold">Reading</h3>
+                <p class="text-gray-300 mt-2">
+                  I enjoy reading both fiction and non-fiction. Books are a
+                  great way to broaden my perspective on various topics.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+    <!-- About End -->
 
     <!-- Projects Section -->
-    <section class="container mx-auto px-4 py-16">
+    <section class="dark:bg-gray-900 dark:text-white" id="projects">
       <h1 class="text-4xl font-bold text-center text-cyan-400 mb-8">
         Projects
       </h1>
-      <div
-        class="flex gap-8 overflow-x-scroll snap-x snap-mandatory pb-4 scrollbar-hide"
-      >
-        <!-- Portfolio Item -->
+      <div class="grid-cols-1 sm:grid md:grid-cols-3">
+        <!-- Card 1 -->
         <div
-          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+          class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-gray-800 dark:text-white sm:shrink-0 sm:grow sm:basis-0"
         >
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Project Image"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
-            <p class="text-gray-400 mt-2">
-              A brief description of the project goes here. It highlights the
-              main features or purpose.
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/city/044.webp"
+              alt="Skyscrapers"
+            />
+          </a>
+          <div class="p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="mb-4 text-base">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
             </p>
           </div>
-        </div>
-        <!-- Portfolio Item -->
-        <div
-          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
-        >
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Project Image"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
-            <p class="text-gray-400 mt-2">
-              A brief description of the project goes here. It highlights the
-              main features or purpose.
-            </p>
+          <div
+            class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-white"
+          >
+            <small>Last updated 3 mins ago</small>
           </div>
         </div>
-        <!-- Portfolio Item -->
+
+        <!-- Card 2 -->
         <div
-          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+          class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-gray-800 dark:text-white sm:shrink-0 sm:grow sm:basis-0"
         >
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Project Image"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
-            <p class="text-gray-400 mt-2">
-              A brief description of the project goes here. It highlights the
-              main features or purpose.
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+              alt="Los Angeles Skyscrapers"
+            />
+          </a>
+          <div class="p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="mb-4 text-base">
+              This card has supporting text below as a natural lead-in to
+              additional content.
             </p>
           </div>
+          <div
+            class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-white"
+          >
+            <small>Last updated 3 mins ago</small>
+          </div>
         </div>
-        <!-- Additional Items -->
+
+        <!-- Card 3 -->
         <div
-          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+          class="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-gray-800 dark:text-white sm:shrink-0 sm:grow sm:basis-0"
         >
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Project Image"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
-            <p class="text-gray-400 mt-2">
-              A brief description of the project goes here. It highlights the
-              main features or purpose.
+          <a href="#!">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+              alt="Palm Springs Road"
+            />
+          </a>
+          <div class="p-6">
+            <h5 class="mb-2 text-xl font-medium leading-tight">Card title</h5>
+            <p class="mb-4 text-base">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
             </p>
+          </div>
+          <div
+            class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center text-surface/75 dark:border-white/10 dark:text-white"
+          >
+            <small>Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
@@ -260,14 +411,10 @@
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
-            href="https://flowbite.com/"
+            href="https://www.instagram.com/gfsy.grphc_/"
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="assets/img/logo.png"
-              class="h-8"
-              alt="Logo"
-            />
+            <img src="assets/img/logo.png" class="h-8" alt="Logo" />
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
               >GhaidaFsy.</span
@@ -280,12 +427,10 @@
               <a href="#home" class="hover:underline me-4 md:me-6">Home</a>
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6"
-                >About</a
-              >
+              <a href="#about" class="hover:underline me-4 md:me-6">About</a>
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Projects</a>
+              <a href="#projects" class="hover:underline me-4 md:me-6">Projects</a>
             </li>
             <li>
               <a href="#" class="hover:underline me-4 md:me-6">Sertificate</a>
@@ -301,8 +446,8 @@
         <span
           class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
           >© 2024
-          <a href="https://flowbite.com/" class="hover:underline">GhaidaFsy™</a>.
-          All Rights Reserved.</span
+          <a href="https://flowbite.com/" class="hover:underline">GhaidaFsy™</a
+          >. All Rights Reserved.</span
         >
       </div>
     </footer>
