@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav
+      class="bg-transparent backdrop-blur-lg shadow-lg sticky top-0 z-50 transition-all duration-300 ease-in-out"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between md:justify-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <span
+            class="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors"
+          >
+            GhaidaFsy.
+          </span>
+        </div>
+
+        <!-- Menu (Desktop) -->
+        <div class="hidden md:flex space-x-8 justify-center w-full">
+          <a
+            href="#home"
+            class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >Projects</a
+          >
+          <a
+            <a
+            href="#"
+            class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >Sertificate</a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-cyan-300 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-800 bg-opacity-80 backdrop-blur-lg transition-all duration-300 ease-in-out transform"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="block px-4 py-2 text-white hover:bg-cyan-600 transition-all duration-300 ease-in-out"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home  -->
+    <section class="bg-white dark:bg-gray-900" id="home">
+      <div
+        class="max-w-screen-xl mx-auto py-16 px-6 lg:grid lg:grid-cols-2 lg:gap-16 items-center"
+      >
+        <!-- Left Section -->
+        <div class="text-center lg:text-left">
+          <h4 class="text-4xl text-cyan-100 font-light mb-2">Hi, I'm</h4>
+          <h2 class="text-5xl font-extrabold text-cyan-300 tracking-tight mb-4">
+            Ghaida Fasya Yuthika Afifah
+          </h2>
+          <p class="text-cyan-100 font-bold mb-4">
+            Web Developer | From Bandung
+          </p>
+          <p class="text-lg text-gray-500 dark:text-gray-400 mb-6">
+            Student majoring in D4 Informatics Engineering at the University of
+            Logistics and International Business.
+          </p>
+          <div class="flex justify-center lg:justify-start gap-6">
+            <a
+              href="https://www.instagram.com/ghaidafasya24/"
+              target="_blank"
+              class="text-cyan-300 hover:text-cyan-400 transition-all duration-300 ease-in-out"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="mailto:ghaidafasya5@gmail.com"
+              class="text-cyan-300 hover:text-cyan-400 transition-all duration-300 ease-in-out"
+            >
+            <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a
+              href="#"
+              class="text-cyan-300 hover:text-cyan-400 transition-all duration-300 ease-in-out"
+            >
+            <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Section (Profile Image) -->
+        <div class="mt-8 lg:mt-0">
+          <div class="relative">
+            <!-- Background Gradient with more rounded corners -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full shadow-xl"
+            ></div>
+            <img
+              class="w-full h-full max-w-md mx-auto rounded-full relative z-10"
+              src="assets/img/profile.png"
+              alt="profile"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home end  -->
+
+    <!-- Projects Section -->
+    <section class="container mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold text-center text-cyan-400 mb-8">
+        Projects
+      </h1>
+      <div
+        class="flex gap-8 overflow-x-scroll snap-x snap-mandatory pb-4 scrollbar-hide"
+      >
+        <!-- Portfolio Item -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Project Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
+            <p class="text-gray-400 mt-2">
+              A brief description of the project goes here. It highlights the
+              main features or purpose.
+            </p>
+          </div>
+        </div>
+        <!-- Portfolio Item -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Project Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
+            <p class="text-gray-400 mt-2">
+              A brief description of the project goes here. It highlights the
+              main features or purpose.
+            </p>
+          </div>
+        </div>
+        <!-- Portfolio Item -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Project Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
+            <p class="text-gray-400 mt-2">
+              A brief description of the project goes here. It highlights the
+              main features or purpose.
+            </p>
+          </div>
+        </div>
+        <!-- Additional Items -->
+        <div
+          class="bg-gray-800 rounded-lg shadow-md flex-none w-80 snap-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Project Image"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-cyan-400">Project Title</h2>
+            <p class="text-gray-400 mt-2">
+              A brief description of the project goes here. It highlights the
+              main features or purpose.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects End  -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

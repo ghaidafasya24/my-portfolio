@@ -1,0 +1,23 @@
+/* Tambahan untuk desain responsif dan hover effects */
+@media (min-width: 1024px) {
+    .profile-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  
+    .profile-container .profile-info {
+      text-align: left;
+    }
+  
+    .profile-container .profile-image {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .profile-container .profile-info .profile-description {
+      margin-top: 15px;
+    }
+  }
+  
