@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/certificate.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -25,6 +26,7 @@
       >
         <!-- Logo -->
         <div class="flex items-center space-x-2">
+          <img src="assets/img/logo.png" class="h-8" alt="Logo" />
           <span
             class="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors"
           >
@@ -472,7 +474,7 @@
           </a>
           <div class="p-6">
             <h5 class="mb-2 text-xl font-medium leading-tight">
-              Restaurant Menu CRUD Data Using Mongo DB
+              Restaurant Menu CRUD Data Using Mongo DB and Go-Lang
             </h5>
             <div class="flex items-center space-x-4 mb-4">
               <img
@@ -483,6 +485,12 @@
               />
               <img
                 src="assets/img/language/js.png"
+                alt="image"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/language/golang.png"
                 alt="image"
                 width="50"
                 height="50"
@@ -519,8 +527,8 @@
     </section>
     <!-- Projects End  -->
 
-    <!-- Certificate -->
-    <section class="dark:bg-gray-900 dark:text-white py-12">
+    <!-- Certificates Section -->
+    <section class="dark:bg-gray-900 dark:text-white py-12" id="certificate">
       <div class="container mx-auto px-4">
         <!-- Header -->
         <div class="text-center mb-12">
@@ -537,7 +545,8 @@
             <img
               src="assets/img/certificates/course_certificate.jpg"
               alt="Certificate Image"
-              class="w-full object-cover"
+              class="w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+              onclick="showImageModal('assets/img/certificates/course_certificate.jpg')"
             />
             <div class="p-4">
               <h2 class="text-xl font-semibold text-cyan-400">
@@ -554,7 +563,8 @@
             <img
               src="assets/img/certificates/course_certificate_final_exam.jpg"
               alt="Certificate Image"
-              class="w-full object-cover"
+              class="w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+              onclick="showImageModal('assets/img/certificates/course_certificate_final_exam.jpg')"
             />
             <div class="p-4">
               <h2 class="text-xl font-semibold text-cyan-400">
@@ -571,7 +581,8 @@
             <img
               src="assets/img/certificates/certificate_html.jpg"
               alt="Certificate Image"
-              class="w-full object-cover"
+              class="w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+              onclick="showImageModal('assets/img/certificates/certificate_html.jpg')"
             />
             <div class="p-4">
               <h2 class="text-xl font-semibold text-cyan-400">Learn HTML</h2>
@@ -583,7 +594,30 @@
         </div>
       </div>
     </section>
-    <!-- Certificate End -->
+
+    <!-- Modal Certificate -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50"
+    >
+      <div
+        class="relative w-11/12 max-w-2xl transition-transform duration-300 scale-95 opacity-0"
+        id="modalContent"
+      >
+        <img
+          id="modalImage"
+          src=""
+          alt="Full Image"
+          class="w-full h-auto cursor-zoom-in transition-transform duration-300 rounded-lg"
+        />
+        <button
+          onclick="closeImageModal()"
+          class="absolute top-4 right-4 text-white bg-gray-800 rounded-full p-2 hover:bg-gray-600"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
 
     <!-- Footer  -->
     <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
@@ -636,5 +670,6 @@
     <!-- Footer end  -->
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/certificate.js"></script>
   </body>
 </html>

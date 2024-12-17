@@ -1,0 +1,23 @@
+      /* Modal Animation */
+      #modalContent.scale-95 {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+
+      #modalContent.scale-100 {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      #imageModal {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
