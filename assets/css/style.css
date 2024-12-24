@@ -5,3 +5,8 @@
     -ms-overflow-style: none; /* Sembunyikan scrollbar di IE/Edge */
     scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
