@@ -349,12 +349,102 @@
     </section>
     <!-- About End -->
 
+    <section class="dark:bg-gray-900 dark:text-white py-12" id="skills">
+      <div class="container mx-auto px-4">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-cyan-400">Skills</h1>
+          <p class="text-lg text-gray-400">Tools and Programming Languages</p>
+        </div>
+
+        <!-- Skills Content -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center"
+        >
+          <!-- Programming Languages -->
+          <div
+            class="group card bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:rotate-1 hover:shadow-xl"
+          >
+            <div class="text-cyan-400 text-4xl mb-4 group-hover:text-white">
+              <i class="fas fa-code"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Programming Languages</h2>
+            <ul class="text-gray-400 space-y-2">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>C#</li>
+              <li>PHP</li>
+              <li>Golang</li>
+              <li>Python</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+
+          <!-- Frameworks and Libraries -->
+          <div
+            class="group card bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:rotate-1 hover:shadow-xl"
+          >
+            <div class="text-cyan-400 text-4xl mb-4 group-hover:text-white">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Frameworks & Libraries</h2>
+            <ul class="text-gray-400 space-y-2">
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>Laravel</li>
+              <li>CodeIgniter</li>
+              <li>Fiber</li>
+              <li>Flutter</li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="group card bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:rotate-1 hover:shadow-xl"
+          >
+            <div class="text-cyan-400 text-4xl mb-4 group-hover:text-white">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Tools</h2>
+            <ul class="text-gray-400 space-y-2">
+              <li>Visual Studio Code</li>
+              <li>Sublime Text</li>
+              <li>Android Studio</li>
+              <li>Git & GitHub</li>
+              <li>MongoDB</li>
+              <li>Figma</li>
+              <li>Canva</li>
+            </ul>
+          </div>
+
+          <!-- Other Skills -->
+          <div
+            class="group card bg-gray-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:rotate-1 hover:shadow-xl"
+          >
+            <div class="text-cyan-400 text-4xl mb-4 group-hover:text-white">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Other Skills</h2>
+            <ul class="text-gray-400 space-y-2">
+              <li>Design</li>
+              <li>Photograpy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="bg-gray-900 text-white py-16 px-4" id="projects">
       <div class="max-w-6xl mx-auto">
-        <h1 class="text-4xl font-bold text-center text-cyan-400 mb-12">
-          My Projects
-        </h1>
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-cyan-400">My Projects</h1>
+          <p class="text-lg text-gray-400">
+            A collection of websites that I created
+          </p>
+        </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project Card 1 -->
@@ -503,6 +593,48 @@
                   class="text-white bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg"
                 >
                   <i class="fa-brands fa-github"></i> GitHub
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition hover:scale-105"
+          >
+            <img
+              src="assets/img/projects/restoran.png"
+              class="w-full h-48 object-cover"
+              alt="Restaurant CRUD App"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-cyan-300">
+                Business Services Website
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                Offers professional business services to support needs with the
+                best solutions.
+              </p>
+
+              <div class="flex mt-4 space-x-3">
+                <img src="assets/img/language/html.png" class="w-8" />
+                <img src="assets/img/language/js.png" class="w-8" />
+                <img src="assets/img/language/golang.png" class="w-8" />
+                <img src="assets/img/language/mongodb.png" class="w-8" />
+              </div>
+
+              <div class="flex justify-start mt-4">
+                <button
+                  onclick="window.location.href='https://github.com/idbiz/idbiz.github.io'"
+                  class="text-white bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-lg mr-3"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </button>
+                <button
+                  onclick="window.location.href='https://id.biz.id/'"
+                  class="text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg"
+                >
+                  <i class="fa-solid fa-laptop"></i> Live Demo
                 </button>
               </div>
             </div>
