@@ -5,85 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+    </style>
   </head>
   <body
     class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4"
   >
     <div
-      class="relative w-full max-w-md p-6 sm:p-8 bg-gray-800/60 backdrop-blur-lg border border-cyan-400/50 rounded-2xl shadow-2xl"
+      class="relative w-full max-w-md p-6 sm:p-8 bg-gray-800/70 backdrop-blur-xl border border-cyan-400/40 rounded-2xl shadow-2xl animate-fadeInUp"
     >
-      <h2 class="text-2xl sm:text-3xl font-bold text-center text-cyan-400">
+      <!-- Glow Border Effect -->
+      <div
+        class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 opacity-20 blur-xl -z-10"
+      ></div>
+
+      <!-- Title -->
+      <h2
+        class="text-3xl font-extrabold text-center text-cyan-400 drop-shadow-lg"
+      >
         Welcome Back!
       </h2>
-      <p class="text-gray-300 text-center mb-4 sm:mb-6 text-sm sm:text-base">
-        Sign in to access your account
+      <p class="text-gray-300 text-center mb-6 text-sm sm:text-base">
+        Sign in to continue your journey
       </p>
 
       <!-- Form Login -->
-      <form action="dashboard.html" method="POST" class="space-y-4">
+      <form action="dashboard.html" method="POST" class="space-y-6">
+        <!-- Username -->
         <div class="relative">
-          <label for="username" class="block text-gray-300 text-sm sm:text-base"
-            >Username</label
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="peer w-full bg-transparent border-b-2 border-gray-600 px-3 pt-4 pb-2 focus:border-cyan-400 focus:outline-none text-white placeholder-transparent text-sm sm:text-base"
+            placeholder="Username"
+            required
+          />
+          <label
+            for="username"
+            class="absolute left-3 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-cyan-400 peer-focus:text-sm"
           >
-          <div
-            class="flex items-center bg-gray-700/80 border border-gray-600 rounded-lg focus-within:border-cyan-400 transition"
-          >
-            <span class="px-3 text-gray-400"><i class="fas fa-user"></i></span>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              class="w-full bg-transparent px-3 py-2 sm:py-3 focus:outline-none text-white placeholder-gray-400 text-sm sm:text-base"
-              placeholder="Enter your username"
-              required
-            />
-          </div>
+            Username
+          </label>
         </div>
 
+        <!-- Password -->
         <div class="relative">
-          <label for="password" class="block text-gray-300 text-sm sm:text-base"
-            >Password</label
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="peer w-full bg-transparent border-b-2 border-gray-600 px-3 pt-4 pb-2 focus:border-cyan-400 focus:outline-none text-white placeholder-transparent text-sm sm:text-base"
+            placeholder="Password"
+            required
+          />
+          <label
+            for="password"
+            class="absolute left-3 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-sm peer-focus:top-2 peer-focus:text-cyan-400 peer-focus:text-sm"
           >
-          <div
-            class="flex items-center bg-gray-700/80 border border-gray-600 rounded-lg focus-within:border-cyan-400 transition"
-          >
-            <span class="px-3 text-gray-400"><i class="fas fa-lock"></i></span>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="w-full bg-transparent px-3 py-2 sm:py-3 focus:outline-none text-white placeholder-gray-400 text-sm sm:text-base"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
+            Password
+          </label>
         </div>
 
+        <!-- Forgot Password & Sign Up -->
         <div class="flex justify-between text-xs sm:text-sm text-gray-400">
           <a href="#" class="hover:text-cyan-300 transition-all"
             >Forgot Password?</a
           >
-          <a href="signup.html" class="hover:text-cyan-300 transition-all"
+          <a href="#" class="hover:text-cyan-300 transition-all"
             >Sign Up</a
           >
         </div>
 
+        <!-- Button -->
         <button
           type="submit"
-          class="w-full bg-cyan-500 text-white px-4 py-2 sm:py-3 rounded-lg shadow-md hover:bg-cyan-600 hover:shadow-lg transition-all duration-300 text-sm sm:text-base"
+          class="relative w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-4 py-3 rounded-lg shadow-md hover:shadow-cyan-500/40 transition-all duration-300 text-sm sm:text-base font-semibold overflow-hidden group"
         >
-          Login
+          <span
+            class="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></span>
+          <span class="relative z-10">Login</span>
         </button>
-        <hr />
-        <p class="text-center font-semibold">
-          <a href="../index.html">Back to home</a>
-        </p>
+
+        <!-- Back to Home -->
+        <div class="text-center text-gray-400 mt-4">
+          <p class="text-sm">
+            <a
+              href="../index.html"
+              class="font-semibold hover:text-cyan-300 transition"
+            >
+              ← Back to home
+            </a>
+          </p>
+        </div>
       </form>
     </div>
-
-    <script
-      src="https://kit.fontawesome.com/yourkitcode.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
