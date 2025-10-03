@@ -34,7 +34,7 @@
         class="container mx-auto px-4 py-3 flex items-center justify-between md:justify-center"
       >
         <!-- Logo -->
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-3">
           <img src="assets/img/logo.png" class="h-8" alt="Logo" />
           <span
             class="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors"
@@ -1024,12 +1024,63 @@
           <p class="text-lg text-gray-400">
             A collection of my achievements and certifications.
           </p>
+
+          <!-- Filter Section -->
+          <div
+            class="w-full flex flex-wrap items-center justify-center gap-4 py-6"
+          >
+            <!-- All -->
+            <button
+              class="filter-btn px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out bg-cyan-500 text-white"
+              data-category="all"
+            >
+              All
+            </button>
+
+            <!-- Bootcamp -->
+            <button
+              class="filter-btn px-6 py-2 rounded-full border border-cyan-400 text-cyan-400 font-semibold transition-all duration-300 ease-in-out hover:bg-cyan-400 hover:text-white"
+              data-category="web"
+            >
+              Training & Bootcamp
+            </button>
+
+            <!-- Machine Learning -->
+            <button
+              class="filter-btn px-6 py-2 rounded-full border border-blue-400 text-blue-400 font-semibold transition-all duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
+              data-category="data"
+            >
+              Non-Academic
+            </button>
+
+            <!-- UI/UX -->
+            <button
+              class="filter-btn px-6 py-2 rounded-full border border-purple-400 text-purple-400 font-semibold transition-all duration-300 ease-in-out hover:bg-purple-400 hover:text-white"
+              data-category="uiux"
+            >
+              Organization
+            </button>
+
+            <!-- Professional -->
+            <button
+              class="filter-btn px-6 py-2 rounded-full border border-pink-400 text-pink-400 font-semibold transition-all duration-300 ease-in-out hover:bg-pink-400 hover:text-white"
+              data-category="professional"
+            >
+              Professional
+            </button>
+          </div>
         </div>
 
         <!-- Certificates Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="certificatesGrid"
+        >
           <!-- Certificate Card 1 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="programming web"
+          >
             <img
               src="assets/img/certificates/introduction_javascript.jpg"
               alt="Certificate Image"
@@ -1047,7 +1098,10 @@
           </div>
 
           <!-- Certificate Card 2 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="web"
+          >
             <img
               src="assets/img/certificates/certificate_html.jpg"
               alt="Certificate Image"
@@ -1063,7 +1117,10 @@
           </div>
 
           <!-- Certificate Card 3 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="data"
+          >
             <img
               src="assets/img/certificates/certificate_BasicStatisticsAndDataVisualization.jpg"
               alt="Certificate Image"
@@ -1079,7 +1136,10 @@
           </div>
 
           <!-- Certificate Card 4 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="programming"
+          >
             <img
               src="assets/img/certificates/course_certificate.jpg"
               alt="Certificate Image"
@@ -1097,7 +1157,10 @@
           </div>
 
           <!-- Certificate Card 5 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="programming"
+          >
             <img
               src="assets/img/certificates/course_certificate_final_exam.jpg"
               alt="Certificate Image"
@@ -1115,7 +1178,10 @@
           </div>
 
           <!-- Certificate Card 6 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="professional"
+          >
             <img
               src="assets/img/certificates/application_programmers.jpg"
               alt="Certificate Image"
@@ -1128,14 +1194,17 @@
                 Application Programmers
               </h2>
               <p class="text-gray-300 mt-2">
-                Issued by Indonesian Professonal Certification Authority in
+                Issued by Indonesian Professional Certification Authority in
                 December 2021.
               </p>
             </div>
           </div>
 
           <!-- Certificate Card 7 -->
-          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="cert-card bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+            data-category="professional"
+          >
             <img
               src="assets/img/certificates/prakerin.jpg"
               alt="Certificate Image"
@@ -1147,13 +1216,46 @@
                 Fieldwork Practices (Prakerin)
               </h2>
               <p class="text-gray-300 mt-2">
-                Issued by SMK Negeri 1 Bekasi in March 2021
+                Issued by SMK Negeri 1 Bekasi in March 2021.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Script Filter -->
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const certCards = document.querySelectorAll(".cert-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Reset all button styles
+          filterButtons.forEach((b) => {
+            b.classList.remove("bg-cyan-500", "text-white");
+            b.classList.add("border");
+          });
+
+          // Active button
+          btn.classList.remove("border");
+          btn.classList.add("bg-cyan-500", "text-white");
+
+          const category = btn.getAttribute("data-category");
+
+          certCards.forEach((card) => {
+            if (
+              category === "all" ||
+              card.getAttribute("data-category").includes(category)
+            ) {
+              card.classList.remove("hidden");
+            } else {
+              card.classList.add("hidden");
+            }
+          });
+        });
+      });
+    </script>
     <!-- Certificates Section End -->
 
     <!-- Modal Certificate -->
@@ -1252,8 +1354,9 @@
               </div>
               <div>
                 <h3 class="text-lg font-bold">Email</h3>
-                <p>ghaidafasya5@gmail.com</p>
+                <!-- <p>ghaidafasya5@gmail.com</p> -->
                 <p>ghaidafsy13@gmail.com</p>
+                <p>714220031@std.ulbi.ac.id</p>
               </div>
             </div>
 
